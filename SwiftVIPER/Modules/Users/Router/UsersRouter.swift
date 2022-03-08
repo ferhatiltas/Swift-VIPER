@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 typealias EntryPoint = AnyView & UIViewController
-
+//Router veya Wireframe(Ekranlar arası geçişin kontrol edildiği katman)
+//Router’ın işi ekranlar arasında yönlenmeyi sağlamaktır. Yalnızca Presenter’ı tanır ve ondan komutlar alır.
 class UserRouter : AnyRouter{
     var entry: EntryPoint?
     

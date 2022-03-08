@@ -8,7 +8,8 @@
 import Foundation
 
 // talks to -> Presenter
-
+//Servis ile haberleşmenin yapıldığı katman
+//Interactor business logic içerir. Ve çoğunlukla API çağrılarından sorumludur. Bu katmanda yapılan işlemler UI dan bağımsız olarak gerçekleşir.
 class UserInteractor : AnyInteractor{
     var presenter: AnyPresenter?
     func getUsers() {

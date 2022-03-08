@@ -8,7 +8,9 @@
 import Foundation
 
 // talks to -> interactor, router, view
-
+//View, Router ve Interactor arasındaki bağlantıyı sağlayan katman
+// viewde tiklama tetikleme degistirme gibi islemler burada yapilir. interactorDidGetUsers gibi
+//Interactor’dan bazı veriler isteyebiliriz veya Router’a farklı bir ekrana yönlenmesini söyleyebiliriz. Presenter ayrıca, Interactor’dan veriler alır ve komutlarla View’a iletir.
 enum NetworkError : Error{
     case NetworkFailed
     case ParsingFailed
